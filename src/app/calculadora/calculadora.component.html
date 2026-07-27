@@ -1,0 +1,24 @@
+<div class="calculadora">
+
+    <input
+        type="number"
+        placeholder="Primeiro número"
+        [(ngModel)]="numero1">
+
+    <br><br>
+
+    <input
+        type="number"
+        placeholder="Segundo número"
+        [(ngModel)]="numero2">
+
+    <br><br>
+
+    <button (click)="somar()">+</button>
+    <button (click)="subtrair()">-</button>
+    <button (click)="multiplicar()">*</button>
+    <button (click)="dividir()">/</button>
+
+    <h2>Resultado: {{ resultado }}</h2>
+
+</div>
